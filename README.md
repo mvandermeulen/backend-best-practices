@@ -551,7 +551,7 @@ Create documents that describe your standards and enforce them as much as you ca
 
 Read more:
 
-- [6 Reasons Standardizing Your Software Is Essential](https://www.gonitro.com/blog/6-reasons-standardizing-software-essential)
+- [Standardization in Software Development: Accelerating Innovation](https://fastercapital.com/content/Standardization-in-Software-Development--Accelerating-Innovation.html)
 
 ## Static Code Analysis
 
