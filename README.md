@@ -436,8 +436,8 @@ Example files:
 - Send notifications of important events that happen in production to a corporate chat like Slack or even by SMS.
 - Don't write logs to a file or to the cloud provider from your program. Write all logs to [stdout](https://www.computerhope.com/jargon/s/stdout.htm) and let other tools handle writing logs to cloud or file (for example [docker supports writing logs to a file](https://docs.docker.com/config/containers/logging/configure/)). Read more: [Why should your Node.js application not handle log routing?](https://www.coreycleary.me/why-should-your-node-js-application-not-handle-log-routing/)
 - Logging operation can affect performance, especially when you transform your logs (for example to remove sensitive data). You can delegate log parsing and transforming to a separate process. For example, [Pino logger supports this](https://github.com/pinojs/pino/blob/master/docs/transports.md).
-- Instead of sending your logs to `stdout`, alternatively you could send them to your [sidecar](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar) (running in the same container) that will handle log parsing, transformations, and batch sending them somewhere else.
-- Logs can be visualized by using a tool like [Kibana](https://www.elastic.co/kibana).
+- Instead of sending your logs to `stdout`, alternatively you could send them to your [sidecar](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar) (running in the same container) that will handle log parsing, transformations, and sending them to your log visualization tool in batches for better performance.
+- Logs can be visualized by using a tool like [Kibana](https://www.elastic.co/kibana), or by your cloud provider of choice.
 
 Read more:
 
